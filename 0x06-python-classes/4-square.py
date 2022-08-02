@@ -5,8 +5,6 @@
 
 class Square:
     """Represents a square."""
-
-
     def __init__(self, size=0):
         """An init method for class Square.
 
@@ -19,8 +17,6 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             self.size = size
-
-
     @property
     def size(self):
         """A getter(accessor) method for private instance attribute: size.
