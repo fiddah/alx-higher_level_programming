@@ -3,18 +3,17 @@
 /**
  * a script that prints a square
  */
-const inputSize = parseInt(process.argv[2]);
-let squareIndicator = '';
+#!/usr/bin/node
 
-if (process.argv.length < 3 || isNaN(inputSize)) {
+let size = parseInt(process.argv[2]);
+if (isNaN(size) || process.argv[2] === undefined) {
   console.log('Missing size');
 }
-for (let i = 0; i < inputSize; i++) {
-  for (let j = 0; j < inputSize; j++) {
-    squareIndicator += 'X';
-  }
-  if (i !== inputSize - 1) {
-    squareIndicator += '\n';
-  }
+let pstr = 'X';
+for (let i = 0; i < size - 1; i++) {
+  pstr += 'X';
 }
-console.log(squareIndicator);
+while (size > 0) {
+  console.log(pstr);
+  size--;
+}
