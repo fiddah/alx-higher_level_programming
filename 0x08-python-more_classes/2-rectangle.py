@@ -1,11 +1,9 @@
 #!/usr/bin/python3
-"""This module defines the a 
-2-Rectangle Object.
-"""
+"""This module defines the a class 2-Rectangle Object."""
+
 
 class Rectangle:
-    """creating a class rectangle
-    """
+    """creating a class rectangle"""
 
     def __init__(self, width=0, height=0):
         """Initializes a Rectangle instance.
@@ -46,12 +44,12 @@ class Rectangle:
 
     """calculate the area of a rectanglé"""
          
-         return self.__width * self.__height
+         return self.width * self.height
 
     def perimeter(self):
 
     """calculate the area of rectanlge"""
         
-        if self.__width == 0 or self.__height == 0:
+        if self.width == 0 or self.height == 0:
             return 0
-        return (self.__width + self.__height) * 2
+        return (self.width + self.height) * 2
