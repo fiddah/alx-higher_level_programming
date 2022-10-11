@@ -1,11 +1,12 @@
 #!/usr/bin/python3
 """This module defines the a 
-    2-Rectangle Object.
-    """
+2-Rectangle Object.
+"""
 
 
 class Rectangle:
-    """creating a class rectangle"""
+    """creating a class rectangle
+    """
 
     def __init__(self, width=0, height=0):
         """Initializes a Rectangle instance.
