@@ -3,7 +3,6 @@
 2-Rectangle Object.
 """
 
-
 class Rectangle:
     """creating a class rectangle
     """
