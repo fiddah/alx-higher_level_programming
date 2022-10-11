@@ -1,13 +1,9 @@
 #!/usr/bin/python3
-"""
-This module defines the a Rectangle Object.
-"""
+"""This module defines the a 2-Rectangle Object."""
 
 
 class Rectangle:
-    """
-creating a class rectangle with getter and setter method.
-"""
+    """creating a class rectangle"""
 
     def _init_(self, width=0, height=0):
         """Initializing Rectangle.
@@ -37,7 +33,7 @@ creating a class rectangle with getter and setter method.
     def height(self, value):
         if not isinstance(value, int):
            raise TypeError('height must be an integer')
-        elif value < 0:
+        elif value < 0: 
             raise ValueError('height must be >= 0')
         self.__height = value
 
@@ -47,6 +43,6 @@ creating a class rectangle with getter and setter method.
 
     def perimeter(self):
 """calculate th area of  rectanlge"""
-        if self.__width == 0 or self.__height == 0
+        if self.__width == 0 or self.__height == 0:
             return 0
         return (self.__width + self.__height) * 2
