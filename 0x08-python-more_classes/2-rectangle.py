@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""This module defines the a 2-Rectangle Object."""
+"""This module defines the a 
+    2-Rectangle Object.
+    """
 
 
 class Rectangle:
