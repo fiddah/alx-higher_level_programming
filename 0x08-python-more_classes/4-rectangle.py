@@ -84,6 +84,7 @@ class Rectangle:
         return hash_str[:-1]
 
    def __repr__(self):
-        """returns a string representation
-        using eval."""
+        """returns a string representation of rectangle instance 
+        to recreate  a new instance using eval().
+        """
         return "Rectangle({}, {})".format(self.width, self.height)
