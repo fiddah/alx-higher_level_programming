@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module 2-rectangle
+"""Module rectangle
 Defines a Rectangle class.
 """
 
@@ -98,7 +98,7 @@ class Rectangle:
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
-         """Finds the biggest Rectangle based on the area"""
+        """Finds the biggest Rectangle based on the area"""
         if not isinstance(rect_1, Rectangle):
             raise TypeError("rect_1 must be an instance of Rectangle")
         if not isinstance(rect_2, Rectangle):
