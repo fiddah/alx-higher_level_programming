@@ -38,9 +38,13 @@ creating a rectangle with getter and setter method.
         self.__height = value
 
     def area(self):
+"""calculate the area of a rectanglé"""
+
          return self.__width * self.__height
 
     def perimeter(self):
+"""calculate th area of  rectanlge"""
+
         if self.__width == 0 or self.__height == 0
             return 0
         return (self.__width + self.__height) * 2
