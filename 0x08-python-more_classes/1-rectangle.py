@@ -4,7 +4,7 @@ This module defines the a Rectangle Object.
 """
 
 
-class Rectangle():
+class Rectangle:
     """
 creating a rectangle with getter and setter method.
 """
