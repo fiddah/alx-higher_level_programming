@@ -6,15 +6,18 @@ This module defines the a Rectangle Object.
 
 class Rectangle:
     """
-creating a rectangle with getter and setter method.
+creating a class rectangle with getter and setter method.
 """
 
     def _init_(self, width=0, height=0):
+        """Initializing Rectangle.
+        """
         self.width = width
         self.height = height
 
     @property
     def width(self):
+        """Get/set the width of the rectangle."""
         return self.__width
 
     @width.setter
@@ -27,6 +30,7 @@ creating a rectangle with getter and setter method.
 
     @property
     def height(self):
+        """Get/set the width of the rectangle."""
         return self.__height
 
     @height.setter
@@ -39,12 +43,10 @@ creating a rectangle with getter and setter method.
 
     def area(self):
 """calculate the area of a rectanglé"""
-
          return self.__width * self.__height
 
     def perimeter(self):
 """calculate th area of  rectanlge"""
-
         if self.__width == 0 or self.__height == 0
             return 0
         return (self.__width + self.__height) * 2
