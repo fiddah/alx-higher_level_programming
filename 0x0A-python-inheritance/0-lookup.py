@@ -3,6 +3,7 @@
 attributes and methods of an object
 """
 
+
 def lookup(obj):
     """ a function tha returns a list of object"""
     return dir(obj)
