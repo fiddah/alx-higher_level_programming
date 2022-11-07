@@ -2,6 +2,7 @@
 
 """A module that adds 2 intergers"""
 
+
 def add_integer(a, b=98):
     """Returns the addition of a and b"""
 
