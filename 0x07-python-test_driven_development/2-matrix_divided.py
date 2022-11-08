@@ -7,12 +7,8 @@ def matrix_divided(matrix, div):
     """ dividing all elements of a matrix"""
 
     """ matrix must be a list of lists"""
-    if matrix is None or len(matrix) == 0:
-        raise TypeError(' matrix must be a matrix (list of lists) of integers/floats')
-
-    """Each row of the matrix must have the same size"""
-    if len(matrix[0]) != len(matrix[1]):
-        raise TypeError("Each row of the matrix must have the same size")
+    if type(matrix) is not list or (len(matrix) == 0) or type(matrix[0]) is not list or (len(matrix[0]) == 0):
+        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
 
     """ Div must be a number"""
     if type(div) != int or type(div) != float:
@@ -24,8 +20,13 @@ def matrix_divided(matrix, div):
 
     """All elements of the matrix should be divided by div, rounded to 2 decimal places"""
     new_matrix = []
-    div = 0
-    for i in matrix:
-        new_matrix = matrix[i] / div
-        return(round(new_matrix, 2))
+    for row in matrix:
+        if type(row) is not list:
+            raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+        if len(row) != len(matrix[0]):
+            raise TypeError("Each row of the matrix must have the same size")
+        for c in row:
+            if type(c) != int and type(c) != float:
+                raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
 
+    return [[round(i / div, 2) for i in row] for row in matrix]
