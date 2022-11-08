@@ -4,7 +4,7 @@ Test -> 3-say_my_name.py
 
 >>> say_my_name = __import__("3-say_my_name").say_my_name
 
-======Succes cases======
+======Success cases======
 
 >>> say_my_name("Yasmine", "Jay")
 My name is Yasmine Jay
@@ -14,7 +14,7 @@ My name is Hannah
 
 =====Empty cases========
 
->>> say_my_name("")
+>>> say_my_name("3, fatima")
 Traceback (most recent call last):
 ...
 TypeError: first_name must be a string
