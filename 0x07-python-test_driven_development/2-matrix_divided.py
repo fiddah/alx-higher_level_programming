@@ -19,8 +19,7 @@ def matrix_divided(matrix, div):
     if div == 0:
         raise ZeroDivisionError('division by zero')
 
-    """All elements of the matrix should be divided by div, 
-    rounded to 2 decimal places"""
+    """All elements of the matrix should be divided by div"""
     new_matrix = []
     for row in matrix:
         if type(row) != list:
@@ -30,5 +29,6 @@ def matrix_divided(matrix, div):
         for c in row:
             if type(c) != int and type(c) != float:
                 raise TypeError(msg)
-        new_matrix.append(round(c/div, 2))
+            n_matrix.append(round(c/div, 2))
+        new_matrix.append(n_matrix)
     return new_matrix
