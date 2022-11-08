@@ -12,8 +12,8 @@ def matrix_divided(matrix, div):
         raise TypeError(msg)
 
     """ Div must be a number"""
-    if type(div) != int or type(div) != float:
-        raise TypeError('div must be a number')
+    if not isinstance(div, int) and not isinstance(div, float):
+        raise TypeError("div must be a number")
 
     """division by zero error"""
     if div == 0:
