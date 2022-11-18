@@ -81,7 +81,7 @@ Checking for div as non-number:
 
 Checking for div as bool:
 	 >>> matrix = [[1, 2, 3], [4, 5, 6]]
-         >>> matrix_divided(matrix, B)
+         >>> matrix_divided(matrix, "B")
          Traceback (most recent call last):
          ...
          TypeError: div must be a number
