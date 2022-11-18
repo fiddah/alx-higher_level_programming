@@ -9,9 +9,6 @@ Test -> 3-say_my_name.py
 >>> say_my_name("Yasmine", "Jay")
 My name is Yasmine Jay
 
->>> say_my_name("Hannah, ")
-My name is Hannah
-
 =====Empty cases========
 
 >>> say_my_name(None, "fatima")
