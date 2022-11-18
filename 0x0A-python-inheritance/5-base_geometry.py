@@ -2,6 +2,6 @@
 """Contains an empty class"""
 
 
-def BaseGeometry:
+class BaseGeometry():
     """empty class"""
     pass
