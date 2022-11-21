@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Square module"""
+"""Square module: returns the area of a squre"""
 
 Rectangle = __import__('9-rectangle').Rectangle
 
