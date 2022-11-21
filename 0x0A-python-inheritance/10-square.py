@@ -1,15 +1,14 @@
 #!/usr/bin/python3
-"""Square module: returns the area of a squre"""
+"""Square module: returns the area of a square"""
 
 Rectangle = __import__('9-rectangle').Rectangle
 
 
-class Square(Retangle):
+class Square(Rectangle):
     """Square class inherits from Rectangle"""
     def __init__(self, size):
         """initializing"""
         self.__size = size
-        super().__init__(size, size)
         """validating size"""
         self.integer_validator("size", size)
 
