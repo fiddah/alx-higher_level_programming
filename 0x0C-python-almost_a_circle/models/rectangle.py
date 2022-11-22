@@ -22,6 +22,10 @@ class Rectangle(Base):
     @width.setter
     def width(self, value):
         """setting the private attribute"""
+        if type(value) != int:
+            raise TypeError('{} must be an integer'.format(width))
+        if value <= 0:
+            raise ValueError('{} must be > 0'.format(width))
         self.__width = value
 
     @property
@@ -32,6 +36,10 @@ class Rectangle(Base):
     @height.setter
     def height(self, value):
         """setting the private attribute"""
+        if type(value) != int:
+            raise TypeError('{} must be an integer'.format(height))
+        if value <= 0:
+            raise ValueError('{} must be > 0'.format(height))
         self.__height = value
 
     @property
@@ -42,6 +50,10 @@ class Rectangle(Base):
     @x.setter
     def x(self, value):
         """setting the private attribute"""
+        if type(value) != int:
+            raise TypeError('{} must be an integer'.format(x))
+        if value < 0:
+            raise ValueError('{} must be >= 0'.format(x))
         self.__x = value
 
     @property
@@ -52,4 +64,8 @@ class Rectangle(Base):
     @y.setter
     def y(self, value):
         """setting the private attribute"""
+        if type(value) != int:
+            raise TypeError('{} must be an integer'.format(y))
+        if value < 0:
+            raise ValueError('{} must be >= 0'.format(y))
         self.__y = value
