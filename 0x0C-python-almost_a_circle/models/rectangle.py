@@ -23,7 +23,7 @@ class Rectangle(Base):
     def width(self, width, value):
         """setting the private attribute"""
         if type(value) != int:
-            raise TypeError('{} must be an integer'.format(width))
+            raise TypeError('width must be an integer')
         if value <= 0:
             raise ValueError('{} must be > 0'.format(width))
         self.__width = value
