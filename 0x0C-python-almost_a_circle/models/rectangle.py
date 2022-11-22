@@ -84,6 +84,7 @@ class Rectangle(Base):
     def __str__(self):
         """A method that creates a string object from a given object"""
 <<<<<<< HEAD
+<<<<<<< HEAD
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, \
                 self.__x, self.__y, self.__width, self.__height)
 =======
@@ -93,3 +94,6 @@ class Rectangle(Base):
                                                        self.__width, 
                                                        self.__height)
 >>>>>>> 6cf99f69b4a4e4718e59ca0b78e65c0949c187c7
+=======
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x, self.__y, self.__width, self.__height)
+>>>>>>> 4b84203d0fc922c2352246c71ca9b618c512c856
