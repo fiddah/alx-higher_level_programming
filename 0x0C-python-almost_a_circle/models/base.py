@@ -58,7 +58,7 @@ class Base():
         try:
             with open(filename, 'r') as f:
                 con = cls.from_json_string(f.read())
-            for i, e in enumerate(l):
+            for i, e in enumerate(con):
                 con[i] = cls.create(**con[i])
         except Exception:
             pass
