@@ -19,17 +19,37 @@ class Rectangle(Base):
         """return a private attribute"""
         return self.__width
 
+    @width.setter
+    def width(self, value):
+        """setting the private attribute"""
+        self.__width = value
+
     @property
     def height(self):
         """return a private attribute"""
         return self.__height
+
+    @height.setter
+    def height(self, value):
+        """setting the private attribute"""
+        self.__height = value
 
     @property
     def x(self):
         """return a private attribute"""
         return self.__x
 
+    @x.setter
+    def x(self, value):
+        """setting the private attribute"""
+        self.__x = value
+
     @property
     def y(self):
         """return a private attribute"""
         return self.__y
+
+    @y.setter
+    def y(self, value):
+        """setting the private attribute"""
+        self.__y = value
