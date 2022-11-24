@@ -82,25 +82,27 @@ class Base():
 
     @classmethod
     def load_from_file_csv(cls):
-        """A method that serializes and deserializes a list of instances."""
-
+        """deserializes a list of Rectangles/Squares in csv"""
         filename = cls.__name__ + ".csv"
-        new_load = []
-        if os.path.exists(filename):
-            with open(filename, 'r') as f:
-                reader = csv.reader(f, delimiter=',')
-                if cls.__name__ == 'Rectangle':
-                    fields = ['id', 'width', 'height', 'x', 'y']
-                elif cls.__name__ == 'Square':
-                    fields = ['id', 'size', 'x', 'y']
-                for x, row in enumerate(reader):
-                    if x > 0:
-                        i = cls(1, 1)
-                        for j, e in enumerate(row):
-                            if e:
-                                setattr(i, fields[j], int(e))
-                        new_load.append(i)
-        return new_load
+        con = []
+        try:
+            with open(filename, 'r') as csvfile:
+                csv_reader = csv.reader(csvfile)
+                for args in csv_reader:
+                    if cls.__name__ is "Rectangle":
+                        dictionary = {"id": int(args[0]),
+                                      "width": int(args[1]),
+                                      "height": int(args[2]),
+                                      "x": int(args[3]),
+                                      "y": int(args[4])}
+                    elif cls.__name__ is "Square":
+                        dictionary = {"id": int(args[0]), "size": int(args[1]),
+                                      "x": int(args[2]), "y": int(args[3])}
+                    obj = cls.create(**dictionary)
+                    con.append(obj)
+        except Exception:
+            pass
+        return con
 
     @staticmethod
     def draw(list_rectangles, list_squares):
