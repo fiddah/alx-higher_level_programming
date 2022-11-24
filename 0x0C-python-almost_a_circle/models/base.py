@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """Base module"""
 
+import csv
+import os
 import json
 
 
