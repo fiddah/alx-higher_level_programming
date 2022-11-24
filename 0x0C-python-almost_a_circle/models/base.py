@@ -100,7 +100,7 @@ class Base():
                             if e:
                                 setattr(i, fields[j], int(e))
                         new_load.append(i)
-        return 
+        return new_load
 
     @staticmethod
     def draw(list_rectangles, list_squares):
