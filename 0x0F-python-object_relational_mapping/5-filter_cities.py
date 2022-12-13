@@ -13,4 +13,7 @@ if __name__ == "__main__":
     c.execute("SELECT cities.name FROM cities
                JOIN states ON cities.state_id = states.id WHERE states.name LIKE %s
                ORDER BY cities.id", (argv[4],))
-    [print(", ".join(city[0]for city in c.fetchall())]
+    rows = c.fetchall()
+    print(", ".join(city[0] for city in rows))
+    c.close()
+    db.close()
