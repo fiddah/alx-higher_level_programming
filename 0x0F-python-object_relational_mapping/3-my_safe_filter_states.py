@@ -2,7 +2,7 @@
 """
 a script that takes in arguments and displays all values in the states
 """
-import sys
+from sys import argv
 import MySQLdb
 
 if __name__ == "__main__":
